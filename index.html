@@ -1,0 +1,72 @@
+<<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PRODUCTS</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>New Product</h2>
+    <br>
+  <input type="text" name=" " value="Name">
+  <br>
+
+  <br>
+  <input type="text" price=" " value="Price">
+  <br>
+
+  <br>
+  <input type="text" quantity=" " value="Quantity">
+  <br>
+
+  <button id="add" class="btn btn-success">Add</button>
+    
+<!-- Products section -->
+    <div id="products" class="jumbotron">
+      <h2>Products</h2>
+      <hr class="my-4">
+      <div class="row">
+        <!-- Sample product card -->
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://s3.amazonaws.com/mernbook/marketplace/tardis.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tardis Figurine</h5>
+              <p class="card-text">$ 2400</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Cart section -->
+    <div id="cart" class="jumbotron">
+      <h2>Cart</h2>
+      <button class="btn btn-dark btn-sm">Close</button>
+      <hr class="my-4">
+      <div class="row">
+        <!-- Sample cart item -->
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="https://s3.amazonaws.com/mernbook/marketplace/tardis.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Tardis Figurine</h5>
+              <p class="card-text">$ 14 x <input type="number" min="0"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <h4>Total: <span id="total"></span></h4>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="vendor/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
+>
